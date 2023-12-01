@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+}
+.add{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    min-height: 100vh;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.add-box{
+    background: white;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+    height: 300px;
+    width: 600px;
+    border-radius: 7px;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+.fa-solid{
+    font-size: 35px;
+    position: absolute;
+    top: 7px;
+    right: 6px;
+    cursor: pointer;
+}
+.add{
+    display: none;
+}
+@media (max-width: 900px){
+    .add-box{
+        width: 90%;
+        top: 25%;
+        left: 20px ;
+    }
+    .fa-solid{
+        font-size: 22px;
+    }    
+}
